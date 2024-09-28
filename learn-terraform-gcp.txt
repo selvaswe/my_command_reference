@@ -1,0 +1,109 @@
+Referance web page https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/google-cloud-platform-build
+
+
+
+shanmugam_selvakumar@selvapc:~/learn-terraform-gcp$ history
+    1  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+    2  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+    3  gpg --no-default-keyring --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg --fingerprint
+    4  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+    5  sudo apt update
+    6  sudo apt-get install terraform
+    7  terraform -help
+    8  touch ~/.bashrc
+    9  terraform -install-autocomplete
+   10  pwd
+   11  mkdir learn-terraform-docker-container
+   12  ll
+   13  ls
+   14  cd cd learn-terraform-docker-container
+   15  cd learn-terraform-docker-container
+   16  neno
+   17  vi
+   18  ls
+   19  terraform init
+   20  terraform apply
+   21  # Add Docker's official GPG key:
+   22  sudo apt-get update
+   23  sudo apt-get install ca-certificates curl
+   24  sudo install -m 0755 -d /etc/apt/keyrings
+   25  sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+   26  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   27  # Add the repository to Apt sources:
+   28  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   29  sudo apt-get update
+   30  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   31  sudo docker run hello-world
+   32  docker images
+   33  sudo docker images
+   34  sudo dpkg -i ./containerd.io_<version>_<arch>.deb   ./docker-ce_<version>_<arch>.deb   ./docker-ce-cli_<version>_<arch>.deb   ./docker-buildx-plugin_<version>_<arch>.deb   ./docker-compose-plugin_<version>_<arch>.deb
+   35  sudo docker info
+   36  sudo service docker start
+   37  sudo docker run hello-world
+   38  terraform init
+   39  ls
+   40  cat main.tf 
+   41  terraform apply
+   42  sudo terraform apply
+   43  sudo docker images
+   44  terraform destroy
+   45  sudo terraform destroy
+   46  sudo docker images
+   47  sudo terraform apply
+   48  sudo docker images
+   49  sudo docker container ls
+   50  ping 8000
+   51  ping localhost:8000
+   52  ping localhost:80
+   53  ping localhost
+   54  curl localhost:80
+   55  curl http://localhost:80
+   56  curl http:\\localhost:80
+   57  curl http:\\2d25abe501ad:80
+   58  curl http://2d25abe501ad:80
+   59  curl http://localhost:8080
+   60  curl http://localhost:8000
+   61  cd ..
+   62  mkdir learn-terraform-gcp
+   63  cd learn-terraform-gcp/
+   64  touch main.tf
+   65  ll
+   66  touch main.tf
+   67  ls
+   68  vi main.tf 
+   69  ls
+   70  vi main.tf 
+   71  cat main.tf 
+   72  gcloud auth application-default login
+   73  sudo terraform init
+   74  sudo terraform fmt
+   75  sudo terraform validate
+   76  sudo terraform apply
+   77  cd ..
+   78  ls -l
+   79  pwd
+   80  cd ..
+   81  ls
+   82  ls -a
+   83  gcloud auth application-default login --no-browser
+   84  gcloud alpha auth application-default login
+   85  sudo terraform apply
+   86  cd shanmugam_selvakumar
+   87  ls
+   88  cd learn-terraform-gcp/
+   89  sudo terraform apply
+   90  l
+   91  cat /home/shanmugam_selvakumar/.config/gcloud/application_default_credentials.json
+   92  gcloud auth login --cred-file=/home/shanmugam_selvakumar/.config/gcloud/application_default_credentials.json
+   93  sudo terraform apply
+   94  cat main.tf 
+   95  vi main.tf 
+   96  sudo terraform fmt
+   97  cat main.tf 
+   98  sudo terraform validate
+   99  sudo terraform apply
+  100  sudo terraform show
+  101  cat main.tf 
+  102  history
