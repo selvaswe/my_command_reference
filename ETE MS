@@ -1,8 +1,30 @@
 
 
 
+------------------
+Docker commands
+----------------
+docker build -t selvaser/food-delivery-app-fe:latest .            
+docker build -t selvaser/userinfo-service:latest .                            
+                           
+docker build -t selvaser/food-catalogue-service:latest .                      
+docker build -t selvaser/eureka-server:latest .                               
+
+docker build -t selvaser/restaurant-listing-service:latest . 
+docker push selvaser/restaurant-listing-service:latest
+
+docker build -t selvaser/food-catalogue-service:latest .  
+docker push selvaser/food-catalogue-service:latest
+
+docker build -t selvaser/userinfo-service:latest . 
+docker push selvser/userinfo-service:latest
+
+docker build -t selvaser/order-service:latest . 
+docker push selvaser/order-service:latest 
 
 
+
+------------------------------
 Commands: TO install AWSCLI in ubuntu -WSL
 --------------------
 sudo apt update -y && sudo apt upgrade -y
