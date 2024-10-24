@@ -34,3 +34,13 @@ unzip awscliv2.zip
 sudo ./aws/install
 aws --version
 
+----------------------
+
+**AWS connect via CLI**
+> aws configure  // To provied access ke and secret key
+> aws sts get-caller-identity // to check the connection
+
+
+//eksctl create cluster --name cluster name --region region name --nodegroup-name node name --node-type t3.medium --nodes 1
+> eksctl create cluster --name clustertest  --region ap-southeast-1  --nodegroup-name eks-clustertest-node --node-type t3.medium --nodes 1
+
