@@ -50,6 +50,7 @@ aws --version
 
 ---------
 MongoDB
+https://cloud.mongodb.com/v2/671afdeea2aa801ac0fe25a5#/overview
 ----------
 mongodb+srv://admin:test1234@atlast-cluster.dlqdk.mongodb.net/
 
