@@ -44,5 +44,13 @@ aws --version
 //eksctl create cluster --name cluster name --region region name --nodegroup-name node name --node-type t3.medium --nodes 1
 > eksctl create cluster --name clustertest  --region ap-southeast-2  --nodegroup-name eks-clustertest-node --node-type t3.medium --nodes 1
 
- > kubectl get nodes
+> kubectl get nodes
+
+> eksctl delete cluster --name clustertest  --region ap-southeast-2  
+
+---------
+MongoDB
+----------
+mongodb+srv://admin:test1234@atlast-cluster.dlqdk.mongodb.net/
+
 
