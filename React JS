@@ -1,0 +1,28 @@
+This course has been tested with the following software versions:
+
+npm 8.15
+node 16.17.0
+tsc 4.7.4
+React 18.2.0
+Spring Boot 2.7.3
+
+https://github.com/selvaswe/fullstack-react-and-springboot/blob/main/install-react-tools/ms-windows/install-ms-windows.md
+
+> node --version
+> npm --version
+
+> npm install --location=global typescript@4.7.4
+
+>tsc --version
+
+Creat New React application 
+>npx create-react-app myapp
+>cd myapp
+>npm start
+ the aobe command will 
+  1 build the app (comple/transpile)
+  2 Start the server
+  3 Watch the source files
+  4 Rebuild the app when soucre is updated (hot reload)
+
+> set PORT=5100 && npm start 
