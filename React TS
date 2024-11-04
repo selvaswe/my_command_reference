@@ -1,0 +1,2 @@
+create new react typscript app 
+> npx create-react-app react-library --template typescript
