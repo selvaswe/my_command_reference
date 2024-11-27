@@ -1,0 +1,26 @@
+> az group show --name MyResourceGroup
+
+
+
+
+--CLI 
+az group create --name <ResourceGroupName> --location <Location>
+az deployment group create --resource-group <ResourceGroupName> --template-file resource-group-template.json
+ex:
+az group create --name MyResourceGroup --location eastus
+az deployment group create --resource-group MyResourceGroup --template-file resource-group-template.json
+
+---PS
+
+
+
+New-AzResourceGroup -Name <ResourceGroupName> -Location <Location>
+New-AzResourceGroupDeployment -ResourceGroupName <ResourceGroupName> -TemplateFile "resource-group-template.json"
+
+EX:
+
+New-AzResourceGroup -Name MyResourceGroup -Location eastus
+New-AzResourceGroupDeployment -ResourceGroupName MyResourceGroup -TemplateFile "resource-group-template.json"
+
+
+https://management.azure.com/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}?api-version=2021-04-01
